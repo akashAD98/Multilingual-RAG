@@ -1,41 +1,65 @@
 # Multilingual-RAG
 
-
-![image](https://github.com/akashAD98/Multilingual-RAG/assets/62583018/a84e1839-a311-496c-b545-3533ef348dea)
+![Multilingual-RAG](https://github.com/akashAD98/Multilingual-RAG/assets/62583018/a84e1839-a311-496c-b545-3533ef348dea.png)
 
 ## Overview
-Multilingual-RAG is an innovative question-answering system that can understand and generate responses in multiple languages. Built on the robust architecture of large language models (LLMs) with Retrieve-And-Generate (RAG) capabilities, this application leverages Cohere's multilingual embeddings, LanceDB vector store, LangChain for question answering, and Argos Translate for seamless translation between languages. The user interface is powered by Gradio, ensuring a smooth and interactive experience.
-
-## Features
-Multilingual Interaction: Ask questions in your preferred language and receive accurate responses in the same language.
-
-Cohere Multilingual Embeddings: Leverages Cohere's powerful multilingual embeddings for understanding and generating text in multiple languages.
-
-LanceDB Vector Store: Utilizes LanceDB for efficient storage and retrieval of vector embeddings, ensuring fast and relevant responses.
-
-LangChain for Q&A: Employs LangChain for sophisticated question-answering capabilities, providing contextually relevant and detailed answers.
-
-Argos Translate for Translation: Integrates Argos Translate for additional translation support, ensuring language versatility.
-
-Gradio Interface: Offers a user-friendly Gradio interface for easy interaction with the system.
-
-## How It Works
-Query Input: The system accepts a user query in any supported language through the Gradio interface.
-Embedding and Retrieval: Cohere's multilingual embeddings are used to understand the query and retrieve relevant documents from LanceDB.
-Answer Generation: LangChain processes the retrieved documents to generate a response that accurately addresses the query.
-Translation: If needed, Argos Translate is used to translate the response into the desired language.
-Response Delivery: The response is delivered to the user through the Gradio interface in the language of the query.
+Multilingual-RAG is an innovative question-answering system with multilingual capabilities, capable of understanding and generating responses in multiple languages. It is built upon the powerful architecture of Large Language Models (LLMs) with Retrieve-And-Generate (RAG) capabilities. This application harnesses the capabilities of Cohere's multilingual embeddings, LanceDB vector store, LangChain for question answering, and Argos Translate for seamless translation between languages. The user interface is provided by Gradio, ensuring a smooth and interactive user experience.
 
 ## Supported Languages
-Multilingual-RAG is designed to support 100+ languages . The exact list of supported languages is dependent on the capabilities of the Cohere multilingual model and Argos Translate.
-
+Multilingual RAG is designed to support over 100 languages. The specific list of supported languages depends on the capabilities of the Cohere multilingual model and Argos Translate. By default, it includes support for English, Hindi, French, and Turkish languages. Additional languages can be added to suit your use case.
 
 ## Getting Started
 Follow these instructions to set up Multilingual-RAG in your local environment.
 
-## Prerequisites
+### Prerequisites
 Ensure you have the following prerequisites installed:
+- Python 3.x
 
-Python 3.x
-Pip (Python package installer)
-Installation
+Create a `.env` file and add your Cohere API key:
+just rename `.env-example` with `.env` & past your API
+
+
+
+## Installation
+You can install the required dependencies using the following commands:
+
+```
+pip install -r requirements.txt
+```
+For Argos Translate, you can install it as follows:
+
+```
+git clone https://github.com/argosopentech/argos-translate.git
+cd argos-translate
+virtualenv env
+source env/bin/activate
+pip install -e .
+```
+
+## Running the App
+To run the Multilingual-RAG app, use the following command:
+
+```
+python3 main.py
+```
+
+## To-Do
+[] Add direct UI support for uploading files
+
+[] Explore open-source multilingual model support
+
+
+## Contributing
+Contributions to Multilingual-RAG are welcome! Whether it's bug reports, pull requests, documentation writing, or feature ideas, we appreciate your contributions to making this project even better.
+
+## License
+This project is licensed under the terms of the MIT License.
+
+
+🤗 Acknowledgments
+Multilingual-RAG is built upon the foundations of several open-source projects:
+[langchain](https://github.com/langchain-ai/langchain)
+[lancedb](https://github.com/lancedb/lancedb)
+[Cohere](https://cohere.com/embeddings)
+[gradio](https://github.com/gradio-app/gradio)
+[argosopentech](https://github.com/argosopentech/argos-translate)
