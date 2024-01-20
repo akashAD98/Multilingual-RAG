@@ -45,9 +45,9 @@ python3 main.py
 ```
 
 ## To-Do
-[] Add direct UI support for uploading files
+[ ] Add direct UI support for uploading files
 
-[] Explore open-source multilingual model support
+[ ] Explore open-source multilingual model support
 
 
 ## Contributing
@@ -57,8 +57,9 @@ Contributions to Multilingual-RAG are welcome! Whether it's bug reports, pull re
 This project is licensed under the terms of the MIT License.
 
 
-🤗 Acknowledgments
+🤗  Acknowledgments
 Multilingual-RAG is built upon the foundations of several open-source projects:
+
 [langchain](https://github.com/langchain-ai/langchain)
 [lancedb](https://github.com/lancedb/lancedb)
 [Cohere](https://cohere.com/embeddings)
