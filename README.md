@@ -38,6 +38,7 @@ pip install -e .
 
 ## Running the App
 To run the Multilingual-RAG app, use the following command:
+Currently, support text/pdf file - change the file path inside main.py
 
 ```
 python3 main.py
