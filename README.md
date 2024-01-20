@@ -1,5 +1,8 @@
 # Multilingual-RAG
 
+
+![image](https://github.com/akashAD98/Multilingual-RAG/assets/62583018/a84e1839-a311-496c-b545-3533ef348dea)
+
 ## Overview
 Multilingual-RAG is an innovative question-answering system that can understand and generate responses in multiple languages. Built on the robust architecture of large language models (LLMs) with Retrieve-And-Generate (RAG) capabilities, this application leverages Cohere's multilingual embeddings, LanceDB vector store, LangChain for question answering, and Argos Translate for seamless translation between languages. The user interface is powered by Gradio, ensuring a smooth and interactive experience.
 
