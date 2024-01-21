@@ -49,6 +49,7 @@ python3 main.py
 
 [ ] Explore open-source multilingual model support
 
+[ ] Audio support 
 
 ## Contributing
 Contributions to Multilingual-RAG are welcome! Whether it's bug reports, pull requests, documentation writing, or feature ideas, we appreciate your contributions to making this project even better.
