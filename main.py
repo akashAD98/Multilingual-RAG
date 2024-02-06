@@ -2,6 +2,7 @@ import os
 import dotenv
 import gradio as gr
 import lancedb
+import logging
 from langchain.embeddings.cohere import CohereEmbeddings
 from langchain.llms import Cohere
 from langchain.prompts import PromptTemplate
@@ -12,7 +13,7 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.document_loaders import PyPDFLoader
 import argostranslate.package
 import argostranslate.translate
-import logging
+
 
 # Configuration Management
 dotenv.load_dotenv(".env")
